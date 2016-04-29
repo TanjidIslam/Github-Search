@@ -13,13 +13,25 @@
           integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 <body>
-    <header>{% include "header.html" %}</header>
+<header>
+    {% include "header.html" %}
+</header>
 
+<div class="container">
+    <div class="page-header">
+        <h1><a href="https://breqwatr.com/">
+            <span id="breq">breq</span><span id="watr">watr</span></a> Interview Assignment
+        </h1>
+    </div>
     {% block content %}
     {% endblock %}
+</div>
 
-    <footer>{% include "footer.html" %}</footer>
+<footer>
+    {% include "footer.html" %}
+</footer>
 
-    {% include "jslibraries.html" %}
+{% include "jslibraries.html" %}
+
 </body>
 </html>

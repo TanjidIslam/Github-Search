@@ -3,5 +3,5 @@ from flask import render_template
 
 
 @app.route('/')
-def hello_world():
-    return render_template("base.html")
+def main_page():
+    return render_template("mainSearch.html")
