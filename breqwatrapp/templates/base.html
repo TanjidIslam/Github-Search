@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>breqwatr - Github Search</title>
-    <link type="text/css" rel="stylesheet" href="css/base.css"/>
+    <link type="text/css" rel="stylesheet" href="stylesheet/base.css"/>
 
     <!-- Links for Roboto and Ubuntu font from Google font API -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel='stylesheet' type='text/css'>
@@ -13,10 +13,13 @@
           integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 <body>
-<header></header>
-{% block content %}
-{% endblock %}
-<footer></footer>
-{% include 'jslibraries' %}
+    <header>{% include "header.html" %}</header>
+
+    {% block content %}
+    {% endblock %}
+
+    <footer>{% include "footer.html" %}</footer>
+
+    {% include "jslibraries.html" %}
 </body>
 </html>
