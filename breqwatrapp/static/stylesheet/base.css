@@ -41,6 +41,21 @@ code {
     font-size: 80%;
 }
 
+/* breqwatr text CSS
+-------------------------------------------------- */
+
+#breq {
+    color: rgb(6, 139, 193);
+}
+
+#watr {
+    color: #606060;
+}
+
+#breq, #watr {
+    font-weight: bolder;
+    font-family: Ubuntu, sans-serif;
+}
 
 /* img CSS for the logo
 -------------------------------------------------- */
@@ -93,21 +108,6 @@ code {
     z-index: 3;
 }
 
-/* breqwatr text CSS
--------------------------------------------------- */
-
-#breq {
-    color: rgb(6, 139, 193);
-}
-
-#watr {
-    color: #606060;
-}
-
-#breq, #watr {
-    font-weight: bolder;
-    font-family: Ubuntu, sans-serif;
-}
 
 /* Advanced Search Result CSS
 -------------------------------------------------- */
