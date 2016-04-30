@@ -9,14 +9,19 @@ def main_page():
     return render_template("mainSearch.html")
 
 
+@app.route('/advanced')
+def advanced():
+    return render_template("advanced.html")
+
+
 @app.route('/', methods=['POST'])
 def search_query():
     session["username"] = request.form["username"]
-    return redirect(url_for('search_result'))
+    return redirect(url_for('get_user'))
 
 
-@app.route('/results')
-def search_result():
+@app.route('/user')
+def get_user():
     url = "https://api.github.com/users"
     search = "/" + session["username"]
     user = get(url + search).json()

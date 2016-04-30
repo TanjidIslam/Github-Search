@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Github User Search</h2>
+    <p class="lead">
+        Search Github Users by their <code>username</code>
+    </p>
+
+    <form role="form" method="POST" id="advancedSearch">
+        <fieldset class="form-group">
+            <label for="exampleSelect1">Search By:</label>
+            <select class="form-control" id="searchCategory">
+                <option id="username-option">Username</option>
+                <option id="user-option">Users</option>
+                <option id="repo-option">Repositories</option>
+                <option id="code-option">Codes</option>
+                <option id="issue-option">Issues</option>
+            </select>
+        </fieldset>
+
+        <div id="userAdvanced">
+            <fieldset class="form-group">
+                <label for="formGroupExampleInput">Search Username</label>
+                <input type="username" class="form-control" id="username" name="username">
+            </fieldset>
+        </div>
+        <div id="usersAdvanced">
+            <fieldset class="form-group">
+                <label for="formGroupExampleInput">Search Users by Keywords</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" name="keywords">
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="formGroupExampleInput">Min Repo</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" name="number"/>
+            </fieldset>
+        </div>
+        <div id="repoAdvanced">
+            <fieldset class="form-group">
+                <label for="formGroupExampleInput">Search Code by Keywords</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" name="keywords">
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="formGroupExampleInput">Repository Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" name="reponame">
+            </fieldset>
+        </div>
+        <div id="codeAdvanced">
+            <fieldset class="form-group">
+                <label for="formGroupExampleInput">Search Code by Keywords</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" name="keywords">
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="formGroupExampleInput">Repository Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" name="reponame">
+            </fieldset>
+        </div>
+        <div id="issueAdvanced">
+            <fieldset class="form-group">
+                <label for="formGroupExampleInput">Search Code by Keywords</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" name="keywords">
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="formGroupExampleInput">Author Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" name="author">
+            </fieldset>
+        </div>
+        <button type="submit" class="btn btn-primary" id="search">
+            <span class="glyphicon glyphicon-search"></span> Search
+        </button>
+    </form>
+{% endblock %}

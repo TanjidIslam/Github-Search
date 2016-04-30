@@ -109,14 +109,10 @@ code {
 }
 
 
-/* Advanced Search Result CSS
+/* Advanced Search CSS
 -------------------------------------------------- */
-#adv-search {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-right: 15px;
-    padding-left: 15px;
-    width: 100%;
+#usersAdvanced, #repoAdvanced, #codeAdvanced, #issueAdvanced {
+    display: none;
 }
 
 
