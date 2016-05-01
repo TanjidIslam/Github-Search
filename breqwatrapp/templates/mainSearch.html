@@ -7,9 +7,77 @@
 
     <form role="form" method="POST" id="advancedSearch">
         <fieldset class="form-group">
-            <label for="formGroupExampleInput">Search Username</label>
-            <input type="username" class="form-control" id="username" name="username">
+            <label for="exampleSelect1">Search</label>
+            <select class="form-control" id="searchCategory">
+                <option id="username-option">Username</option>
+                <option id="user-option">Users</option>
+                <option id="repo-option">Repositories</option>
+                <option id="code-option">Codes</option>
+                <option id="issue-option">Issues</option>
+            </select>
         </fieldset>
+        <div id="userAdvanced">
+            <fieldset class="form-group">
+                <label for="formGroupExampleInput">Search Username</label>
+                <input type="username" class="form-control" id="username" name="username">
+            </fieldset>
+        </div>
+        <div id="usersAdvanced">
+            <fieldset class="form-group">
+                <label for="formGroupExampleInput">Keywords Search</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" name="keyword">
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="exampleSelect1">Account Type</label>
+                <select class="form-control" id="userType">
+                    <option id="all-type">All Accounts</option>
+                    <option id="user-type">Personal Accounts</option>
+                    <option id="org-type">Organization Accounts</option>
+                </select>
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="formGroupExampleInput">Repositories Owned (Minimum)</label>
+                <input type="text" class="form-control"  name="minrepo" />
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="formGroupExampleInput">Followers (Minimum)</label>
+                <input type="text" class="form-control"  name="follower" />
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="formGroupExampleInput">Country</label>
+                <select class="form-control bfh-countries" data-country="US"></select>
+            </fieldset>
+        </div>
+        <div id="repoAdvanced">
+            <fieldset class="form-group">
+                <label for="formGroupExampleInput">Search Code by Keywords</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" name="keyword">
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="formGroupExampleInput">Repository Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" name="reponame">
+            </fieldset>
+        </div>
+        <div id="codeAdvanced">
+            <fieldset class="form-group">
+                <label for="formGroupExampleInput">Search Code by Keywords</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" name="keyword">
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="formGroupExampleInput">Repository Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" name="reponame">
+            </fieldset>
+        </div>
+        <div id="issueAdvanced">
+            <fieldset class="form-group">
+                <label for="formGroupExampleInput">Search Code by Keywords</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" name="keyword">
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="formGroupExampleInput">Author Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" name="author">
+            </fieldset>
+        </div>
         <button type="submit" class="btn btn-primary" id="search">
             <span class="glyphicon glyphicon-search"></span> Search
         </button>

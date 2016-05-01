@@ -17,10 +17,8 @@ $(function () {
         console.log(field);
         for (var i = 0; i < listFields.length; i++) {
             if(listFields[i] != selectForm[field]){
-                console.log("not the form..", listFields[i]);
                 $(listFields[i]).hide();
             } else {
-                console.log("matches..", listFields[i]);
                 $(listFields[i]).show();
             }
         }

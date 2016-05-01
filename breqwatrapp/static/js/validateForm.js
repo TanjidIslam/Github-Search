@@ -1,7 +1,7 @@
 /**
  * Created by Tanjid Islam on 30/04/2016.
  */
-$(document).ready(function() {
+$(document).ready(function () {
     $('#advancedSearch').formValidation({
         framework: 'bootstrap',
         icon: {
@@ -17,17 +17,31 @@ $(document).ready(function() {
                     }
                 }
             },
-            number: {
+            follower: {
                 validators: {
                     integer: {
                         message: 'The value is not a Number'
                     }
                 }
             },
-            keywords: {
+            keyword: {
                 validators: {
                     notEmpty: {
                         message: 'Must submit with a keyword'
+                    }
+                }
+            },
+            minrepo: {
+                validators: {
+                    integer: {
+                        message: 'The value is not a Number'
+                    }
+                }
+            },
+            follower: {
+                validators: {
+                    integer: {
+                        message: 'The value is not a Number'
                     }
                 }
             }
