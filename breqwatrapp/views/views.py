@@ -144,8 +144,6 @@ def get_repos():
         api += "+" + key + ":" + repo_info[key]
 
     repo_json = get(api).json()
-    print(api)
-    print(repo_json)
     if "message" in repo_json:
         session["error"] = "No result was found based on your input. Try Again!"
         return redirect(url_for("not_found"))
