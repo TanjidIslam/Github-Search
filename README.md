@@ -33,7 +33,7 @@ This guide will walk you through deploying Project locally
 
 ```console
 $ https://github.com/TanjidIslam/breqwatr.git
-$ cd code-mangler
+$ cd code-breqwatr
 $ pyvenv-3.5 env
 $ source env/bin/activate
 $ pip3 install -r requirements.txt
