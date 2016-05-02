@@ -1,19 +1,16 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h2>Github User Search</h2>
+    <h2>Github Search</h2>
     <p class="lead">
-        Search Github Users by their <code>username</code>
+        Please fill in at least one field
     </p>
-
     <form role="form" method="POST" id="advancedSearch" name="advancedSearch">
         <fieldset class="form-group">
-            <label for="exampleSelect1">Search</label>
+            <label for="searchMethod">Search</label>
             <select class="form-control" id="searchCategory" name="selectCategory">
                 <option id="username-option">Username</option>
                 <option id="user-option">Users</option>
                 <option id="repo-option">Repositories</option>
-                <option id="code-option">Codes</option>
-                <option id="issue-option">Issues</option>
             </select>
         </fieldset>
 
@@ -22,10 +19,6 @@
         {% include "search-users.html" %}
 
         {% include "search-repo.html" %}
-
-        {% include "search-code.html" %}
-
-        {% include "search-issue.html" %}
 
         <button type="submit" class="btn btn-primary" id="search">
             <span class="glyphicon glyphicon-search"></span> Search
