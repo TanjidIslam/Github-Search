@@ -5,19 +5,20 @@ Code Mangler is an application for beginner programmers to get a better understa
 ### Features
 - Search Specific User by Username
 - Search Users with one or more of the following criteria:
--   Keyword
--   Account Type
--   Number of Reposoirties Contributed/Owned
--   Number of Followers
--   Location
+    -  Keyword
+    -  Account Type
+    -  Number of Reposoirties Contributed/Owned
+    -  Number of Followers
+    -  Location
 - Search Repositories with one of more of the following criteri:
--   Keyword
--   Specific Repository Name
--   Specific Repository Owner
--   Stars
--   Size of the Repository
--   Number of Forks
+    -  Keyword
+    -  Specific Repository Name
+    -  Specific Repository Owner
+    -  Stars
+    -  Size of the Repository
+    -  Number of Forks
 - Views: Passed PyLint & Pep8
+- Structure: Basic Flask Structure
 
 ### Requirements
 - Python 3.5.1 (https://www.python.org/downloads/)
