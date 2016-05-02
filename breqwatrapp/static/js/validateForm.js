@@ -31,14 +31,35 @@ $(document).ready(function () {
                     }
                 }
             },
-            minrepo: {
+            repoNum: {
                 validators: {
                     integer: {
                         message: 'The value is not a Number'
                     }
                 }
             },
-            follower: {
+            followerUsers: {
+                validators: {
+                    integer: {
+                        message: 'The value is not a Number'
+                    }
+                }
+            },
+            repoSize: {
+                validators: {
+                    integer: {
+                        message: 'The value is not a Number'
+                    }
+                }
+            },
+            repoSizeCode: {
+                validators: {
+                    integer: {
+                        message: 'The value is not a Number'
+                    }
+                }
+            },
+            forkNum: {
                 validators: {
                     integer: {
                         message: 'The value is not a Number'
