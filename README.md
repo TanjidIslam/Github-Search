@@ -1,6 +1,4 @@
-# breqwatr - Github Search
-Code Mangler is an application for beginner programmers to get a better understanding of Python programming language. 
-
+Github Search
 
 ### Features
 - Search Specific User by Username
