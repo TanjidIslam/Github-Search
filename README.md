@@ -31,8 +31,8 @@ This guide will walk you through deploying Project locally
 #### Usage
 
 ```console
-$ https://github.com/TanjidIslam/breqwatr.git
-$ cd code-breqwatr
+$ https://github.com/TanjidIslam/Github-Search.git
+$ cd Github-Search
 $ pyvenv-3.5 env
 $ source env/bin/activate
 $ pip3 install -r requirements.txt
